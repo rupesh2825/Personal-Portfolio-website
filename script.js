@@ -1,4 +1,4 @@
-// Remove all functions related to the hamburger menu and mobile toggling
+
 function opentab(tabname) {
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
