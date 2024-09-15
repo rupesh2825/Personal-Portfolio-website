@@ -16,15 +16,13 @@
         <div class="container">
             <nav>
                 <img src="logo.png" class="logo">
-                <ul id="sidemenu">
+                <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="" onclick="closemenu()"></i>
                 </ul>
-                <i class="" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p></p>
@@ -32,7 +30,8 @@
             </div>
         </div>
     </div>
-    <!------------------------------about---------------------------->
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -63,14 +62,12 @@
                             <li><span>Core Java</span><br>In Spring Boot</li>
                             <li><span>ChatGpt for Everyer</span><br>AI Tools</li>
                             <li><span>Basic</span><br>Html, CSS & JS</li>
-
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Ongoing</span><br>Computer Engineering</li>
                             <li><span>University</span><br>Savitribai Phule Pune University</li>
-                            <li><span></span><br></li>
                         </ul>
                     </div>
                 </div>
@@ -78,22 +75,7 @@
         </div>
     </div>
 
-    <script>
-        function opentab(tabname) {
-            var i;
-            var x = document.getElementsByClassName("tab-contents");
-            var y = document.getElementsByClassName("tab-links");
-            for (i = 0; i < x.length; i++) {
-                x[i].classList.remove("active-tab");
-            }
-            for (i = 0; i < y.length; i++) {
-                y[i].classList.remove("activ-link");
-            }
-            document.getElementById(tabname).classList.add("active-tab");
-            event.currentTarget.classList.add("activ-link");
-        }
-    </script>
-    <!--------------------------services-------------->
+    <!-- Services Section -->
     <div class="container" id="services">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -116,11 +98,10 @@
                 <p>HackerRank: <br> Provides coding challenges in various domains such as algorithms, data structures, AI, and databases. <br> Often used by companies for technical interviews and hiring.</p>
                 <a href="https://www.bing.com/search?pc=U523&q=coding+practice+platform&form=U523DF" target="_blank">learn more</a>
             </div>
-
-
         </div>
     </div>
-    <!-----------------------Portfolio---------------------->
+
+    <!-- Portfolio Section -->
     <div class="portfolio" id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
@@ -132,7 +113,7 @@
                         <p>• Developed a fully functional ATM system in Java, simulating real-world banking operations with features such as secure user authentication, account management, balance inquiries, withdrawals, and deposits. <br><br>• Utilized
                             Object-Oriented Programming principles and HashMap for efficient data storage and management. <br><br>• Implemented robust error handling to ensure system reliability. <br><br>• Planned future enhancements include GUI development,
                             database integration, and advanced banking features. <br><br>• Tools Used: Java, Object-Oriented Programming.</p>
-                        <a href="#" target="_blank"><i class="fas fa-external-lint-alt"></i></a>
+                        <a href="https://github.com/rupesh2825/-ATM-Machine-Project-" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -140,88 +121,53 @@
                     <div class="layer">
                         <h3>Email and Password Generator</h3>
                         <p>• Developed a Java-based application to generate customized email addresses and secure passwords based on user inputs like first name, last name, and department.
-                            <br><br>• Implemented functionality for users to update credentials and manage user information.
-                            <br><br>• Integrated with a MySQL database to securely store and manage user data using JDBC, showcasing skills in Java programming, object-oriented design, and database connectivity.
-                            <br><br>• Tools Used: Java, MySQL, JDBC.</p>
-                        <a href="#" target="_blank"><i class="fas fa-external-lint-alt"></i></a>
+                            <br><br>• Integrated logic to check for password strength and ensure compliance with security standards.
+                            <br><br>• Implemented a graphical user interface (GUI) using Java Swing for an enhanced user experience.
+                            <br><br>• Incorporated data storage functionality for user account management and future retrieval.
+                            <br><br>• Tools Used: Java, Java Swing.</p>
+                        <a href="https://github.com/rupesh2825/Email-and-Password-Generator" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-
                 <div class="work">
                     <img src="my work3.jpg" alt="">
                     <div class="layer">
                         <h3>Games</h3>
                         <p>Ongoing.</p>
-                        <a href="#" target="_blank"><i class="fas fa-external-lint-alt"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
-    <!------------------------------Contact--------------------------------->
+    <!-- Contact Section -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa fa-paper-plane"></i>rc0556703@gmail.com</p>
-                    <p><i class="fa fa-phone"></i>9156728762</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="https://x.com/Rupesh2825" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/rupesh_28./?igsh=MWJyb2xraHFtd2R6Zw%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/rupesh-chavan-b330a825a/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    <a href="C:\vs code\profile\Rupesh Chavan CV.pdf" class="btn btn2" target="_blank">Download CV</a>
+        <div class="container contact-row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i> rc05556703@gmail.com</p>
+                <p> <i class="fas fa-phone-alt"></i> +91 9156728762</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Rupesh2825" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rupesh_28./?igsh=MWJyb2xraHFtd2R6Zw%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rupesh-chavan-b330a825a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="contact-right">
-                    <form id="contactForm" name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2"><a href="index.html"></a> Submit</button>
-                    </form>
-                </div>
-
-                <script>
-                    document.getElementById('contactForm').addEventListener('submit', function(event) {
-                        event.preventDefault(); // Prevent the default form submission
-
-                        var formData = new FormData(this);
-                        var xhr = new XMLHttpRequest();
-                        xhr.open('POST', 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', true);
-                        xhr.send(formData);
-
-                        xhr.onload = function() {
-                            if (xhr.status === 200) {
-                                alert('Form submitted successfully!');
-                            } else {
-                                alert('Form submission failed.');
-                            }
-                        };
-                    });
-                </script>
-
+                <a href="downloads/C:\vs code\profile\CV.pdf" class="btn btn2" target="_blank" download="C:\vs code\profile\CV.pdf">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/393b93c80c81ab3298ed70c7fe4f23a1" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
             </div>
         </div>
-        <div class="copyright">
-            <p><i class="fa fa-heart"></i> 2024</p>
-        </div>
+        <hr>
+        <p class="copyright">Website Design by Rupesh Chavan</p>
     </div>
-    <script>
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemeu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemeu.style.right = "-200px";
-        }
-    </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
