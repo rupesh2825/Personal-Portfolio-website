@@ -496,3 +496,89 @@ form .btn2:hover {
 .copyright i {
     color: #ff004f;
 }
+
+
+/*-------------------Media Queries------------------*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+    nav .fa-bars {
+        display: block;
+    }
+    .header-text {
+        text-align: center;
+        padding-top: 80px;
+    }
+    .header-text h1 {
+        font-size: 2em;
+    }
+    .tab-titles {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-links {
+        margin: 10px 0;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .contact-right form input,
+    .contact-right form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .header-text h1 {
+        font-size: 1.5em;
+    }
+    .tab-links {
+        font-size: 14px;
+    }
+    .tab-contents ul li span {
+        font-size: 12px;
+    }
+    .services-list div i {
+        font-size: 40px;
+    }
+    .work .layer a {
+        font-size: 14px;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .contact-right form input,
+    .contact-right form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
